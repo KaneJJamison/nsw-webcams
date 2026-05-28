@@ -26,6 +26,7 @@
   },
   "private": true,
   "devDependencies": {
-    "jimp": "^0.22.12"
+    "jimp": "^0.22.12",
+    "puppeteer-core": "^25.1.0"
   }
 }

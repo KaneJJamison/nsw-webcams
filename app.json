@@ -40,6 +40,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9f47e93a-612d-488d-b31c-694a9d34e332"
+      }
+    },
+    "owner": "kanejamison"
   }
 }
