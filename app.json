@@ -1,13 +1,34 @@
 {
   "expo": {
-    "name": "nsw-webcams",
-    "slug": "nsw-webcams",
+    "name": "NSW Coastal Webcams",
+    "slug": "nsw-coastal-webcams",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "description": "Live webcam feeds and weather conditions from 22 coastal and lake locations across New South Wales. Browse by region, save your favourites, and explore cameras on an interactive map.",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nswcoastalwebcams.app",
+      "buildNumber": "1",
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app does not use your camera.",
+        "NSLocationWhenInUseUsageDescription": "This app does not use your location.",
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        }
+      },
+      "privacyManifests": {
+        "NSPrivacyAccessedAPITypes": []
+      }
     },
     "android": {
       "adaptiveIcon": {

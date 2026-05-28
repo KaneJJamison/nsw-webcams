@@ -1,20 +1,19 @@
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { FavouritesProvider } from './src/context/FavouritesContext';
+import TabNavigator from './src/navigation/TabNavigator';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <FavouritesProvider>
+      <SafeAreaProvider>
+        <StatusBar style="dark" />
+        <NavigationContainer>
+          <TabNavigator />
+        </NavigationContainer>
+      </SafeAreaProvider>
+    </FavouritesProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
